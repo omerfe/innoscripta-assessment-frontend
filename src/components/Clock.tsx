@@ -13,7 +13,7 @@ const Clock: React.FC = () => {
       setCurrentTime(timeString);
 
       const currentHour = moment().hour();
-      // const currentHour = 19;
+    //   const currentHour = 10;
       if (currentHour >= 6 && currentHour < 18) {
         setIcon("sun");
         document.documentElement.classList.remove("dark");

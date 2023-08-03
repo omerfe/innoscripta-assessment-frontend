@@ -1,7 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["a1.espncdn.com", "a2.espncdn.com", "m.files.bbci.co.uk"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.bbci.co.uk",
+      },
+      {
+        protocol: "https",
+        hostname: "**.guim.co.uk",
+      },
+      {
+        protocol: "https",
+        hostname: "**.espncdn.com",
+      },
+    ],
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 
