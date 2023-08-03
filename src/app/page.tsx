@@ -8,7 +8,7 @@ export default async function Home() {
   const { data: article, error: articleError } = await getArticleById(3);
   return (
     <main className="flex flex-col min-h-screen mt-6">
-      <h1 className="text-5xl font-semibold mx-auto">Today's Headline</h1>
+      <h1 className="text-5xl font-semibold mx-auto">Today&apos;s Headline</h1>
       {article && (
         <div className="flex flex-col items-center justify-center gap-3 container mt-6">
           <div className="relative w-full h-[60vh]">
